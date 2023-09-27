@@ -1,6 +1,7 @@
 'use strict';
 
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
 
 const userSchema = (sequelize, DataTypes) => {
   const model = sequelize.define('User', {
